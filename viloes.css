@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2c3e50;
+  color: white;
+  padding: 16px 30px;
+}
+
+.topo h1 {
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+
+.intro {
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.intro p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+.grid-viloes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.card-vilao {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-vilao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-vilao > img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card-vilao > h3 {
+  padding: 12px 14px 4px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.card-vilao > p {
+  padding: 0 14px 10px;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-vilao > button {
+  margin: 0 14px 14px;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.card-vilao > button:hover {
+  background: #3498db;
+}
+
+
+.sec-sobre {
+  margin-top: 50px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.sec-sobre h2 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.sec-sobre p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+
+.sec-vilaos {
+  margin-top: 50px;
+}
+
+.sec-vilaos h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.grid-vilaos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.card-vilao-img {
+  position: relative;
+}
+
+.card-vilao-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.selo-novo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #3498db;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.selo-promo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e74c3c;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.card-vilao-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card-vilao-info h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.card-vilao-info p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.preco {
+  font-size: 1.2rem;
+  color: #27ae60;
+}
+
+.card-vilao-info button {
+  margin-top: auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card-vilao-info button:hover {
+  background: #3498db;
+}
+
+
+.sec-mais-vendidos {
+  margin-top: 50px;
+}
+
+.sec-mais-vendidos h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.sec-oferta {
+  margin-top: 50px;
+}
+
+.banner-oferta {
+  background: linear-gradient(45deg, #e67e22, #f39c12);
+  color: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  text-align: center;
+  animation: pulse 1.4s ease-in-out infinite;
+  box-shadow: 0 8px 20px rgba(230, 126, 34, 0.35);
+}
+
+.banner-oferta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.banner-oferta p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.banner-oferta button {
+  padding: 12px 28px;
+  background: #fff;
+  color: #e67e22;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.banner-oferta button:hover {
+  transform: scale(1.05);
+}
+
+
+.rodape {
+  background: #2c3e50;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+
+@keyframes vilao {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.015); }
+}
+
+
+@media (max-width: 1024px) {
+  .grid-viloes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-vilaos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-viloes {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-vilaos {
+    grid-template-columns: 1fr;
+  }
+
+  .topo {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+  .contato {
+    color: black;
+}
